@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Browse our curated tourism packages — from tropical beaches to mountain adventures, find your perfect getaway.">
+  <title>Tour Packages | Wanderlust Tours</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">Wander<span>lust</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="packages.html" class="active">Packages</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <h1>Our Tour Packages</h1>
+    <p>Choose from our handcrafted packages designed for every kind of explorer</p>
+  </section>
+
+  <!-- Packages Section -->
+  <section class="section" style="background: var(--bg-light);">
+    <div class="cards-grid">
+
+      <!-- Package 1 -->
+      <div class="package-card">
+        <div class="package-img">
+          <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=600" alt="Goa Beach">
+          <span class="package-badge">Bestseller</span>
+        </div>
+        <div class="package-body">
+          <h3>Goa Beach Bliss</h3>
+          <p class="pkg-location">📍 Goa, India</p>
+          <p class="pkg-desc">Soak up the sun on golden beaches, explore Portuguese-era churches, cruise through
+            mangrove backwaters, and enjoy Goa's legendary nightlife and seafood cuisine.</p>
+          <ul class="package-highlights">
+            <li>Stay at a 4-star beachfront resort</li>
+            <li>Dolphin watching boat cruise</li>
+            <li>Visit to Old Goa heritage churches</li>
+            <li>Spice plantation tour with lunch</li>
+          </ul>
+          <div class="package-info-row">
+            <span class="info-item">⏱ 4 Nights / 5 Days</span>
+            <span class="info-item">👥 2–6 People</span>
+            <span class="info-item">⭐ 4.8 Rating</span>
+          </div>
+          <div class="package-price-row">
+            <span class="package-price">₹18,999 <small>/person</small></span>
+            <button class="btn-book"
+              onclick="alert('Thank you for your interest! Please contact us to confirm your booking.')">Book
+              Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Package 2 -->
+      <div class="package-card">
+        <div class="package-img">
+          <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=600" alt="Kashmir Valley">
+          <span class="package-badge">Popular</span>
+        </div>
+        <div class="package-body">
+          <h3>Kashmir Paradise</h3>
+          <p class="pkg-location">📍 Srinagar, India</p>
+          <p class="pkg-desc">Experience the heaven on earth — glide over Dal Lake on a shikara, explore Mughal gardens,
+            trek through alpine meadows, and savour authentic Kashmiri wazwan cuisine.</p>
+          <ul class="package-highlights">
+            <li>Houseboat stay on Dal Lake</li>
+            <li>Gondola ride at Gulmarg</li>
+            <li>Saffron garden visit in Pampore</li>
+            <li>Pahalgam valley excursion</li>
+          </ul>
+          <div class="package-info-row">
+            <span class="info-item">⏱ 5 Nights / 6 Days</span>
+            <span class="info-item">👥 2–8 People</span>
+            <span class="info-item">⭐ 4.9 Rating</span>
+          </div>
+          <div class="package-price-row">
+            <span class="package-price">₹28,499 <small>/person</small></span>
+            <button class="btn-book"
+              onclick="alert('Thank you for your interest! Please contact us to confirm your booking.')">Book
+              Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Package 3 -->
+      <div class="package-card">
+        <div class="package-img">
+          <img src="https://images.unsplash.com/photo-1569154941061-e231b4725ef1?w=600" alt="Rajasthan Forts">
+          <span class="package-badge">Heritage</span>
+        </div>
+        <div class="package-body">
+          <h3>Royal Rajasthan Tour</h3>
+          <p class="pkg-location">📍 Jaipur – Udaipur – Jodhpur, India</p>
+          <p class="pkg-desc">Walk through majestic forts and opulent palaces, ride camels across the Thar Desert, and
+            discover the vibrant culture, textiles, and flavours of Rajasthan.</p>
+          <ul class="package-highlights">
+            <li>Amer Fort elephant ride experience</li>
+            <li>Desert safari with camp dinner</li>
+            <li>Boat ride on Lake Pichola</li>
+            <li>Traditional folk dance evening</li>
+          </ul>
+          <div class="package-info-row">
+            <span class="info-item">⏱ 6 Nights / 7 Days</span>
+            <span class="info-item">👥 2–10 People</span>
+            <span class="info-item">⭐ 4.7 Rating</span>
+          </div>
+          <div class="package-price-row">
+            <span class="package-price">₹32,999 <small>/person</small></span>
+            <button class="btn-book"
+              onclick="alert('Thank you for your interest! Please contact us to confirm your booking.')">Book
+              Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Package 4 -->
+      <div class="package-card">
+        <div class="package-img">
+          <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=600" alt="Kerala Backwaters">
+          <span class="package-badge">Relaxing</span>
+        </div>
+        <div class="package-body">
+          <h3>Kerala Backwater Escape</h3>
+          <p class="pkg-location">📍 Alleppey – Munnar, India</p>
+          <p class="pkg-desc">Cruise the serene backwaters on a traditional houseboat, wander through emerald tea
+            plantations in Munnar, and rejuvenate with an authentic Ayurvedic spa treatment.</p>
+          <ul class="package-highlights">
+            <li>Overnight luxury houseboat cruise</li>
+            <li>Tea factory tour in Munnar</li>
+            <li>Ayurvedic wellness spa session</li>
+            <li>Periyar wildlife sanctuary visit</li>
+          </ul>
+          <div class="package-info-row">
+            <span class="info-item">⏱ 5 Nights / 6 Days</span>
+            <span class="info-item">👥 2–6 People</span>
+            <span class="info-item">⭐ 4.8 Rating</span>
+          </div>
+          <div class="package-price-row">
+            <span class="package-price">₹24,999 <small>/person</small></span>
+            <button class="btn-book"
+              onclick="alert('Thank you for your interest! Please contact us to confirm your booking.')">Book
+              Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Package 5 -->
+      <div class="package-card">
+        <div class="package-img">
+          <img src="https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?w=600" alt="Manali Mountains">
+          <span class="package-badge">Adventure</span>
+        </div>
+        <div class="package-body">
+          <h3>Manali Mountain Adventure</h3>
+          <p class="pkg-location">📍 Manali – Solang – Rohtang, India</p>
+          <p class="pkg-desc">Conquer snow-capped peaks, go river rafting in the Beas, paraglide over lush valleys at
+            Solang, and drive through the breathtaking Rohtang Pass at 13,000 ft.</p>
+          <ul class="package-highlights">
+            <li>Paragliding at Solang Valley</li>
+            <li>River rafting on Beas River</li>
+            <li>Rohtang Pass snow excursion</li>
+            <li>Bonfire night with local music</li>
+          </ul>
+          <div class="package-info-row">
+            <span class="info-item">⏱ 4 Nights / 5 Days</span>
+            <span class="info-item">👥 4–12 People</span>
+            <span class="info-item">⭐ 4.6 Rating</span>
+          </div>
+          <div class="package-price-row">
+            <span class="package-price">₹19,499 <small>/person</small></span>
+            <button class="btn-book"
+              onclick="alert('Thank you for your interest! Please contact us to confirm your booking.')">Book
+              Now</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Wanderlust Tours</h4>
+        <p>Your trusted travel partner since 2015. We bring you closer to the world's most beautiful destinations.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="packages.html">Packages</a></li>
+
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>📧 info@wanderlusttours.com</li>
+          <li>📞 +91 98765 43210</li>
+          <li>📍 Mumbai, India</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Wanderlust Tours. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('active');
+    }
+  </script>
+</body>
+
+</html>

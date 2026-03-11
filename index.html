@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Wanderlust Tours - Discover amazing travel destinations and curated tourism packages across the world.">
+  <title>Wanderlust Tours | Explore the World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="logo">Wander<span>lust</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="packages.html">Packages</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1>Explore the Beauty of the World</h1>
+      <p>Discover breathtaking destinations, immerse yourself in unique cultures, and create memories that last a
+        lifetime with our handcrafted travel packages.</p>
+      <a href="packages.html" class="btn btn-primary">View Packages</a>
+    </div>
+  </section>
+
+  <!-- Featured Destinations -->
+  <section class="section" id="destinations" style="background: var(--bg-light);">
+    <div class="section-title">
+      <h2>Popular Destinations</h2>
+      <p>Handpicked destinations that offer unforgettable experiences for every type of traveler.</p>
+    </div>
+    <div class="cards-grid">
+
+      <div class="card">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=600" alt="Taj Mahal, India">
+        </div>
+        <div class="card-body">
+          <span class="location">📍 Agra, India</span>
+          <h3>Taj Mahal & Golden Triangle</h3>
+          <p>Witness the iconic ivory-white marble masterpiece and explore India's rich Mughal heritage across Delhi,
+            Agra, and Jaipur.</p>
+        </div>
+        <div class="card-footer">
+          <span class="card-price">₹25,999 <small>/person</small></span>
+          <div class="card-meta">
+            <span>⏱ 5 Days</span>
+            <span>⭐ 4.8</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=600" alt="Bali, Indonesia">
+        </div>
+        <div class="card-body">
+          <span class="location">📍 Bali, Indonesia</span>
+          <h3>Bali Island Paradise</h3>
+          <p>Relax on pristine beaches, explore ancient temples, lush rice terraces, and vibrant nightlife on this
+            tropical island getaway.</p>
+        </div>
+        <div class="card-footer">
+          <span class="card-price">₹45,999 <small>/person</small></span>
+          <div class="card-meta">
+            <span>⏱ 6 Days</span>
+            <span>⭐ 4.9</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600" alt="Paris, France">
+        </div>
+        <div class="card-body">
+          <span class="location">📍 Paris, France</span>
+          <h3>Romantic Paris Getaway</h3>
+          <p>Stroll along the Seine, savour French cuisine, and marvel at the Eiffel Tower in the most romantic city in
+            the world.</p>
+        </div>
+        <div class="card-footer">
+          <span class="card-price">₹89,999 <small>/person</small></span>
+          <div class="card-meta">
+            <span>⏱ 7 Days</span>
+            <span>⭐ 4.7</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="section" id="why-us">
+    <div class="section-title">
+      <h2>Why Choose Us</h2>
+      <p>We are dedicated to making your travel dreams a reality with premium services.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-box">
+        <div class="feature-icon">🏆</div>
+        <h3>Best Price Guarantee</h3>
+        <p>We offer competitive pricing without compromising on quality or experience.</p>
+      </div>
+      <div class="feature-box">
+        <div class="feature-icon">🛡️</div>
+        <h3>Safe & Secure Travel</h3>
+        <p>Your safety is our top priority with trusted partners and 24/7 support.</p>
+      </div>
+      <div class="feature-box">
+        <div class="feature-icon">🎯</div>
+        <h3>Curated Experiences</h3>
+        <p>Every trip is carefully crafted by travel experts for unforgettable memories.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Wanderlust Tours</h4>
+        <p>Your trusted travel partner since 2015. We bring you closer to the world's most beautiful destinations.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="packages.html">Packages</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>📧 info@wanderlusttours.com</li>
+          <li>📞 +91 98765 43210</li>
+          <li>📍 Mumbai, India</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Wanderlust Tours. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('active');
+    }
+  </script>
+</body>
+
+</html>
